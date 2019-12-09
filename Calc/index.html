@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Калькулятор стоимости отдыха</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="container" id="about">
+            <div class="counter" id="price">
+                <div class="counter-title">Рассчитайте стоимость вашего отдыха
+                </div>
+                <div class="counter-block">
+                    <div class="counter-block-option">Количество людей</div>
+                    <input type="number" min="1" step="1" class="counter-block-input">
+                </div>
+                <div class="counter-block">
+                    <div class="counter-block-option">На сколько дней</div>
+                    <input type="number" min="1" step="1" class="counter-block-input">
+                </div>
+                <div class="counter-block">
+                    <div class="counter-block-option">Выберете базу</div>
+                    <select name="place" id="select">
+                        <option class="counter-block-opt" id="mumbai" value="1">Индия, Мумбай</option>
+                        <option class="counter-block-opt" id="kerala" value="1.5">Индия, Керала</option>
+                        <option class="counter-block-opt" id="varanasi" value="1.8">Индия, Варанаси</option>
+                    </select>
+                </div>
+                <div class="counter-total">
+                    Общая сумма<br>
+                    <span id="total">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
